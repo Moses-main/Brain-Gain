@@ -21,7 +21,8 @@ Explain the subjects or topics covered by the website and provide an overview of
 ## User Guide: 
 Offer guidance on how to effectively use the website's features or tools, such as setting goals, tracking progress, or submitting assignments.
 
-## Support: Provide contact information or links to support resources, like FAQs, help centers, or community forums, to assist users with any questions or technical issues.
+## Support: 
+Provide contact information or links to support resources, like FAQs, help centers, or community forums, to assist users with any questions or technical issues.
 
 ## Contributions: 
 Explain how users can contribute to the website, such as submitting content, suggesting improvements, or participating in discussions.
