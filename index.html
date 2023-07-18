@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Gain - Your E-Learning Platform</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Reset some default styles */
+    body, h1, h2, h3, p, ul, li, a {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Global styles */
+    header {
+      background-color: #0081af;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .navbar-brand {
+      flex: 1;
+    }
+
+    .navbar-toggle {
+      flex: 1;
+      text-align: right;
+      cursor: pointer;
+      display: none;
+    }
+
+    .navbar-menu {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0081af;
+      padding: 1rem 0;
+    }
+
+    .navbar-menu li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    .navbar-menu li:last-child {
+      margin-right: 0;
+    }
+
+    .navbar-menu li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar-menu li a:hover {
+      background-color: #005a80;
+    }
+
+    .hero {
+      margin-top: 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .course-card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #0081af;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+    
+    /* HERE */
+    .course-img{
+        height: 25%;
+        width: auto;
+        object-fit: contain ;
+        text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    .social-icons {
+      margin-bottom: 1rem;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .go-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .go-to-top a {
+      background-color: #0081af;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .founder-section {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .founder-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .founder-quote {
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+        background-color: #0081af;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      .navbar-menu.active {
+        animation: fadeInUp 0.3s;
+        display: block;
+      }
+
+      .navbar-menu li {
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      .navbar-menu li a {
+        display: block;
+        padding: 0.5rem;
+        color: #fff;
+      }
+
+      .navbar-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <h1>Brain Gain</h1>
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar-menu" id="menu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#practical">Practical</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="container">
+        <h1>Welcome to Brain Gain</h1>
+        <p>Your One-Stop E-Learning Platform</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Brain Gain</h2>
+      <p>Brain Gain is a comprehensive e-learning platform that offers a wide range of courses in various disciplines,
+        including software development, maths, science, law, art, music, culture, and more. Our mission is to provide
+        high-quality education and practical learning experiences to students from all walks of life.</p>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="container">
+      <h2>Explore Our Courses</h2>
+      <div class="course-card">
+        <img class="course-img"  src="soft_icon.png" alt="Course 1">
+        <h3>Software Development</h3>
+        <p>Master the art of coding with our comprehensive software development courses. From web development to mobile
+          app development, we've got you covered!</p>
+      </div>
+      <div class="course-card">
+        <img class="course-img"  src="maths_icon.png" alt="Course 2">
+        <h3>Mathematics</h3>
+        <p>Sharpen your mathematical skills with our interactive courses. From algebra to calculus, you'll find the right
+          course for you.</p>
+      </div>
+      <div class="course-card">
+        <img class="course-img"  src="art_icon.png" alt="Course 3">
+        <h3>Art & Design</h3>
+        <p>Unleash your creativity with our art and design courses. Learn from experienced artists and explore various
+          mediums.</p>
+      </div>
+      <!-- Add more course cards for other disciplines -->
+    </div>
+  </section>
+
+  <section id="practical">
+    <div class="container">
+      <h2>Practical Learning</h2>
+      <p>At Brain Gain, we believe in hands-on learning. Our practical section provides real-world projects and exercises to
+        enhance your skills and gain valuable experience.</p>
+      <a href="practical.html" class="btn">Start Practicing</a>
+    </div>
+  </section>
+
+  <section id="community">
+    <div class="container">
+      <h2>Join Our Community</h2>
+      <p>Interact with other learners, share ideas, and collaborate on projects in our vibrant community.</p>
+      <!-- Add community features and interactions -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, feel free to get in touch with our support team.</p>
+      <a href="mailto:support@Brain Gain.com" class="btn">Contact Support</a>
+    </div>
+  </section>
+
+  <section id="dashboard">
+    <div class="container">
+      <h2>Account Dashboard</h2>
+      <p>Track your progress, enroll in courses, and manage your learning journey with our personalized dashboard.</p>
+      <!-- Add account dashboard features -->
+    </div>
+  </section>
+
+  <section id="founder">
+    <div class="container">
+      <h2>Meet Our Founder</h2>
+      <div class="founder-section">
+        <img src="founder.jpeg" alt="Founder Image" class="founder-image">
+        <p class="founder-quote">"Education is the key to unlocking your potential and achieving your dreams." - Moses Sunday</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://wa.link/y0mqz2" class="fab fa-whatsapp"></a>
+        <a href="
+https://twitter.com/SundayMoses0?t=bsDwcjAXaHMTh5-4g1vnLQ&s=09" class="fab fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/moses-sunday" class="fab fa-linkedin"></a>
+        <a href="
+https://www.instagram.com/invites/contact/?i=1btavk5f09zy2&utm_content=rwiteg3" class="fab fa-instagram"></a>
+      </div>
+      <p>&copy; 2023 Brain Gain. All rights reserved.</p>
+    </div>
+    <div class="go-to-top">
+      <a href="#header" class="fas fa-arrow-up"></a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
