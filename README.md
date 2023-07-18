@@ -1,10 +1,9 @@
-# Brain Grain  ***ON PROCESS***
+# Brain Grain  
+***Still On Process***
 
-<img href="brand.png" alt="Brand image"></img>
+<image href="/founder.jpeg" alt="Brand image"></image>
 
 This is an e-learning site. It will offer different range of learning and also resources needed for any online course.
-
- // The content of a README file for an educational website may include the following: **
 
 ## Introduction: 
 Briefly introduce the educational website and its purpose.
