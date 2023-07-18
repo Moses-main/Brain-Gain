@@ -1,4 +1,4 @@
-# Edux
+# Brain Grain 
 This is an e-learning site. It will offer different range of learning and also resources needed for any online course.
 
  ** The content of a README file for an educational website may include the following: **
