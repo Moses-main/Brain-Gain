@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Brain Gain - Unlock Your Potential</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #B8860B; /* Dark Gold */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation Styles */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* About Section Styles */
+    .about {
+      background-color: #F5DEB3; /* Light Goldenrod Yellow */
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about h1 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Contact Section Styles */
+    .contact {
+      background-color: #F4F4F4;
+      padding: 40px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .contact a {
+      color: #B8860B; /* Dark Gold */
+      text-decoration: none;
+    }
+
+    /* Mobile Responsive Styles */
+    @media screen and (max-width: 768px) {
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+
+      .menu-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: #B8860B; /* Dark Gold */
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .menu-icon.open span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+
+      .menu-icon.open span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-icon.open span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .menu.open {
+        display: flex;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- Show the navigation buttons on desktop view -->
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
+      <!-- Show the menu icon for handheld devices -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="about">
+      <h1>Welcome to Brain Gain</h1>
+      <p>At Brain Gain, we believe that learning is the key to unlocking your true potential. Whether you're a software enthusiast, an aspiring artist, or a mathematics aficionado, we have a diverse range of courses tailored to cater to your learning needs.</p>
+      <p>Our mission is to empower individuals from all walks of life to discover, nurture, and enhance their talents. We aim to provide a dynamic and interactive e-learning platform that fosters growth, creativity, and confidence in every learner.</p>
+      <p>What sets us apart is our commitment to excellence, diverse course selection, expert instructors, interactive learning experiences, and a vibrant learning community that fosters support and collaboration.</p>
+      <p>At Brain Gain, we are dedicated to providing top-notch learning experiences that leave a lasting impact on your personal and professional growth. Our courses are designed to be flexible, allowing you to learn at your own pace and on your own schedule.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or need assistance? We're here to help!</p>
+      <p>Email us at <a href="mailto:support@braingain.com">support@braingain.com</a> or give us a call at <a href="tel:+15551234567">+1 (555) 123-4567</a>.</p>
+    </section>
+  </div>
+
+  <!-- JavaScript to handle the mobile menu -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('open');
+      const menuIcon = document.querySelector('.menu-icon');
+      menuIcon.classList.toggle('open');
+    }
+  </script>
+</body>
+
+  </html>
+  
