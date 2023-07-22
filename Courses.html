@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Brain Gain</title>
+  <!-- Add swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #002147; /* Dark Blue */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation Styles */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* Courses Section Styles */
+    .courses {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .courses h1 {
+      font-size: 32px;
+      color: #002147; /* Dark Blue */
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .swiper-container {
+      margin: 20px 0;
+      height: 40%;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .swiper-slide {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .swiper-slide h2 {
+      font-size: 24px;
+      color: #002147; /* Dark Blue */
+      margin-bottom: 10px;
+    }
+
+    .swiper-slide p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Signup and Login Form Styles */
+    .form-container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      color: #002147; /* Dark Blue */
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-size: 16px;
+      color: #555;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .form-group button {
+      background-color: #002147; /* Dark Blue */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #001a38;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="courses">
+      <h1>Available Courses</h1>
+
+      <!-- Add swiper container -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Course 1 -->
+          <div class="swiper-slide">
+            <img class="course-img"  src="soft_icon.png" alt="Course 1">
+            <h2>Software Development Course</h2>
+            <p>This course covers HTML, CSS, JavaScript, Python, and more. Get started on your journey to becoming a software developer!</p>
+          </div>
+          <!-- Course 2 -->
+          <div class="swiper-slide">
+            <h2>Arts and Design Course</h2>
+            <p>Unleash your creativity with our arts and design course. Learn drawing, painting, and digital design skills.</p>
+          </div>
+          <!-- Course 3 -->
+          <div class="swiper-slide">
+            <h2>Mathematics Course</h2>
+                <img class="course-img"  src="dp.jpeg" alt="Course 2">
+            <p>Sharpen your math skills with our comprehensive mathematics course. From basic algebra to advanced calculus.</p>
+          </div>
+          <!-- Add more courses here -->
+        </div>
+      </div>
+
+    </section>
+
+    <div class="form-container">
+      <h2>Sign Up or Log In</h2>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+
+      <div class="form-group">
+        <button>Sign Up</button>
+        <button>Log In</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+  </html>
+  
