@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Same as before -->
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical Section - Brain Gain</title>
+  <style>
+  /* NEW STYLES */
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Light Gray */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #008080; /* Teal */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ddd; /* Light Gray */
+}
+
+/* Terminal Styles */
+.terminal-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.terminal {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: monospace;
+  white-space: pre;
+  overflow-y: auto;
+  height: 200px;
+}
+
+/* Canvas Drawing Styles */
+.canvas-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.canvas {
+  border: 1px solid #ccc;
+  cursor: crosshair;
+  touch-action: none;
+  max-width: 100%;
+}
+
+.drawing-tools {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.drawing-tools button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #008080; /* Teal */
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.drawing-tools button:hover {
+  background-color: #008080; /* Teal */
+  color: #fff;
+}
+
+/* Calculating Platform Styles */
+.calculator-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  font-size: 20px;
+}
+
+.calculator button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #008080; /* Teal */
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calculator button:hover {
+  background-color: #008080; /* Teal */
+  color: #fff;
+}
+
+/* Mobile Navigation Styles */
+nav.open {
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #008080; /* Teal */
+  position: relative;
+}
+
+nav.open a {
+  display: block;
+  padding: 10px;
+}
+
+nav.open a:hover {
+  background-color: #006666; /* Dark Teal */
+}
+
+nav button {
+  display: none;
+  background-color: #fff;
+  color: #008080; /* Teal */
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav.open button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+nav.open button:hover {
+  background-color: #006666; /* Dark Teal */
+  color: #fff;
+}
+/* END OF NEW STYLES*/
+  
+  
+  
+  
+  /* OLD STYLES */
+    /* Global Styles */
+    /*
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Styles */
+    /*header {
+      background-color: #002147; /* Dark Blue */
+     /* color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation Styles */
+   /* nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* Terminal Styles */
+  /*  .terminal-container {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .terminal {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      font-family: monospace;
+      white-space: pre;
+      overflow-y: auto;
+      height: 200px;
+    }
+
+    /* Canvas Drawing Styles */
+   /* .canvas-container {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .canvas {
+      border: 1px solid #ccc;
+      cursor: crosshair;
+      touch-action: none;
+      max-width: 100%;
+    }
+
+    .drawing-tools {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .drawing-tools button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Calculating Platform Styles */
+   /* .calculator-container {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .calculator {
+      width: 100%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      font-size: 20px;
+    }
+    */
+  </style>
+</head>
+
+<body>
+  <!-- Same as before -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="terminal-container">
+      <h2>Terminal Section</h2>
+      <div class="terminal" id="terminal">
+        <!-- The terminal content goes here -->
+        Welcome to Brain Gain Terminal.<br>
+        Type 'help' for a list of available commands.
+      </div>
+      <input type="text" id="terminal-input" autofocus>
+    </section>
+
+    <section class="canvas-container">
+      <h2>Canvas Drawing Section</h2>
+      <canvas class="canvas" width="400" height="300" id="canvas"></canvas>
+      <div class="drawing-tools">
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('blue')">Blue</button>
+        <button onclick="changeColor('green')">Green</button>
+        <!-- Add more drawing tools and functionality using JavaScript -->
+      </div>
+    </section>
+
+    <section class="calculator-container">
+      <h2>Calculating Platform</h2>
+      <div class="calculator">
+        <input type="text" id="calc-input" readonly>
+        <button onclick="clearInput()">C</button>
+        <button onclick="appendToInput('7')">7</button>
+        <button onclick="appendToInput('8')">8</button>
+        <button onclick="appendToInput('9')">9</button>
+        <button onclick="appendToInput('/')">/</button>
+        <button onclick="appendToInput('4')">4</button>
+        <button onclick="appendToInput('5')">5</button>
+        <button onclick="appendToInput('6')">6</button>
+        <button onclick="appendToInput('*')">*</button>
+        <button onclick="appendToInput('1')">1</button>
+        <button onclick="appendToInput('2')">2</button>
+        <button onclick="appendToInput('3')">3</button>
+        <button onclick="appendToInput('-')">-</button>
+        <button onclick="appendToInput('0')">0</button>
+        <button onclick="appendToInput('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendToInput('+')">+</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Terminal Functionality
+    
+    // Canvas Functionality
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let currentColor = 'black';
+    let isDrawing = false;
+
+    function changeColor(color) {
+      currentColor = color;
+    }
+
+    function startDrawing(event) {
+      isDrawing = true;
+      draw(event);
+    }
+
+    function draw(event) {
+      if (isDrawing) {
+        const rect = canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        ctx.fillStyle = currentColor;
+        ctx.fillRect(x, y, 5, 5);
+      }
+    }
+
+    function stopDrawing() {
+      isDrawing = false;
+    }
+
+    canvas.addEventListener('mousedown', startDrawing);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseup', stopDrawing);
+    canvas.addEventListener('mouseout', stopDrawing);
+
+    // Calculating Platform Functionality
+    const calcInput = document.getElementById('calc-input');
+
+    function appendToInput(value) {
+      calcInput.value += value;
+    }
+
+    function clearInput() {
+      calcInput.value = '';
+    }
+
+    function calculate() {
+      try {
+        calcInput.value = eval(calcInput.value);
+      } catch (error) {
+        calcInput.value = 'Error';
+      }
+    }
+
+    // 
+  </script>
+  <div class="container">
+      
+    <!-- Terminal Section (same as before) -->
+
+    <section class="canvas-container">
+      <h2>Canvas Drawing Section</h2>
+      <canvas class="canvas" width="400" height="300" id="canvas"></canvas>
+      <div class="drawing-tools">
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('blue')">Blue</button>
+        <button onclick="changeColor('green')">Green</button>
+        <button onclick="eraseCanvas()">Erase</button>
+        <button onclick="saveDiagram()">Save</button>
+        <!-- Add more drawing tools and functionality using JavaScript -->
+      </div>
+    </section>
+
+    <section class="calculator-container">
+      <h2>Calculating Platform</h2>
+      <div class="calculator">
+        <input type="text" id="calc-input" readonly>
+        <button onclick="clearInput()">C</button>
+        <button onclick="appendToInput('7')">7</button>
+        <!-- Add more buttons for other digits and operators -->
+        <button onclick="calculate()">=</button>
+        <button onclick="appendToInput('+')">+</button>
+        <!-- Add more scientific function buttons -->
+        <button onclick="calculatePower()">x^y</button>
+        <button onclick="calculateSquareRoot()">√</button>
+        <button onclick="calculateSin()">sin</button>
+        <button onclick="calculateCos()">cos</button>
+        <!-- Add more scientific functions as needed -->
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Terminal Functionality (same as before)
+    
+    const terminal = document.getElementById('terminal');
+    const terminalInput = document.getElementById('terminal-input');
+
+    function handleTerminalInput() {
+      const input = terminalInput.value.trim();
+      terminalInput.value = '';
+      if (input.toLowerCase() === 'help') {
+        terminal.innerHTML += '<br>List of available commands: command1, command2, ...';
+      } else if (input.toLowerCase() === 'clear') {
+        terminal.innerHTML = '';
+      } else {
+        terminal.innerHTML += `<br>Command not recognized: ${input}`;
+      }
+    }
+
+    terminalInput.addEventListener('keyup', (event) => {
+      if (event.key === 'Enter') {
+        handleTerminalInput();
+      }
+    });
+
+    //SEPATRES
+    
+    
+    function highlightSyntax(code) {
+  const pythonKeywords = ['def', 'if', 'else', 'print', 'return'];
+  const jsKeywords = ['function', 'if', 'else', 'console', 'return'];
+  const phpKeywords = ['function', 'if', 'else', 'echo', 'return'];
+
+  const pythonPattern = new RegExp(pythonKeywords.join('|'), 'g');
+  const jsPattern = new RegExp(jsKeywords.join('|'), 'g');
+  const phpPattern = new RegExp(phpKeywords.join('|'), 'g');
+
+  code = code.replace(pythonPattern, '<span class="python-keyword">$&</span>');
+  code = code.replace(jsPattern, '<span class="js-keyword">$&</span>');
+  code = code.replace(phpPattern, '<span class="php-keyword">$&</span>');
+
+  return code;
+}
+
+    
+
+    // Canvas Functionality
+    // (Add line drawing, erase, and save functionality using JavaScript)
+
+
+let isDrawingLine = false;
+let startX, startY;
+
+function startLineDrawing(event) {
+  isDrawingLine = true;
+  startX = event.clientX - canvas.getBoundingClientRect().left;
+  startY = event.clientY - canvas.getBoundingClientRect().top;
+}
+
+function drawLine(event) {
+  if (isDrawingLine) {
+    const x = event.clientX - canvas.getBoundingClientRect().left;
+    const y = event.clientY - canvas.getBoundingClientRect().top;
+    ctx.beginPath();
+    ctx.moveTo(startX, startY);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+  }
+}
+
+function stopLineDrawing() {
+  isDrawingLine = false;
+}
+
+function eraseCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function saveDiagram() {
+  const image = canvas.toDataURL('image/png');
+  const link = document.createElement('a');
+  link.href = image;
+  link.download = 'diagram.png';
+  link.click();
+}
+
+
+    // Calculating Platform Functionality
+    // (Add scientific function calculations using JavaScript)
+    
+    function calculatePower() {
+  try {
+    const input = calcInput.value;
+    const [base, exponent] = input.split('^').map(Number);
+    calcInput.value = Math.pow(base, exponent);
+  } catch (error) {
+    calcInput.value = 'Error';
+  }
+}
+
+function calculateSquareRoot() {
+  try {
+    const input = calcInput.value;
+    calcInput.value = Math.sqrt(Number(input));
+  } catch (error) {
+    calcInput.value = 'Error';
+  }
+}
+
+function calculateSin() {
+  try {
+    const input = calcInput.value;
+    calcInput.value = Math.sin(Number(input));
+  } catch (error) {
+    calcInput.value = 'Error';
+  }
+}
+
+function calculateCos() {
+  try {
+    const input = calcInput.value;
+    calcInput.value = Math.cos(Number(input));
+  } catch (error) {
+    calcInput.value = 'Error';
+  }
+}
+
+    // Responsive Navigation (same as before)
+    Responsive Navigation
+    const nav = document.querySelector('nav');
+    const navToggle = document.createElement('button');
+    navToggle.innerHTML = '☰';
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+    nav.appendChild(navToggle);
+    
+  </script>
+</body>
+
+  </html>
+  
