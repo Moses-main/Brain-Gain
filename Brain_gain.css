@@ -186,4 +186,260 @@
       .navbar-toggle {
         display: block;
       }
+        } 
+
+/* END OF THE STYLE FOR THE HOMEPAGE */
+
+/**************************************/
+
+/* BEGINNING OF THE STYLE FOR THE DASHBOARD*/
+
+
+        .settings-modal .profile-image-container {
+            text-align: center;
         }
+
+        .settings-modal .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px auto;
+        }
+
+        .settings-modal input[type="file"] {
+            display: none;
+        }
+
+        .settings-modal label.upload-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #008080;
+            /* Teal */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* ... All previous styles ... */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #003366;
+            /* Dark Blue */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Student Profile Styles */
+        .student-profile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .student-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .student-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .student-info h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #003366;
+            /* Dark Blue */
+        }
+
+        .student-info p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        /* Course Status Styles */
+        .course-status {
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .course-status p {
+            margin: 0;
+            font-size: 16px;
+            color: #003366;
+            /* Dark Blue */
+        }
+
+        .course-status span {
+            font-weight: bold;
+        }
+
+        /* Achievements Styles */
+        .achievements {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* Ensure responsiveness */
+            margin: 20px 0;
+        }
+
+        .achievement {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+            /* Add space between achievements */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #003366;
+            /* Dark Blue */
+        }
+
+        .achievement i {
+            font-size: 30px;
+            color: #008080;
+            /* Teal */
+            margin-bottom: 10px;
+            animation: glowing 2s infinite;
+        }
+
+        .achievement p {
+            margin: 0;
+            color: #666;
+        }
+
+@keyframes glowing {
+            0% {
+                box-shadow: 0 0 5px #008080;
+                /* Teal */
+            }
+            50% {
+                box-shadow: 0 0 20px #008080;
+                /* Teal */
+            }
+            100% {
+                box-shadow: 0 0 5px #008080;
+                /* Teal */
+            }
+        }
+
+        /* Settings Button Styles */
+        .settings-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #008080;
+            /* Teal */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+        }
+
+@keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Settings Modal Styles */
+        .settings-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .settings-modal h2 {
+            margin: 0 0 20px;
+            color: #003366;
+            /* Dark Blue */
+        }
+
+        .settings-modal label {
+            display: block;
+            font-weight: bold;
+            color: #003366;
+            /* Dark Blue */
+            margin-bottom: 5px;
+        }
+
+        .settings-modal input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .settings-modal button {
+            background-color: #008080;
+            /* Teal */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+
+
+/* END FOR THE STYLE FOR THE DASHBOARD*/
+
+
+/**************************************/
+
+
