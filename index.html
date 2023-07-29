@@ -6,197 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brain Gain - Your E-Learning Platform</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    /* Reset some default styles */
-    body, h1, h2, h3, p, ul, li, a {
-      margin: 0;
-      padding: 0;
-    }
+  <<link rel="stylesheet" href="Brain_gain.css" />
 
-    body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-    }
-
-    /* Global styles */
-    header {
-      background-color: #0081af;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 0;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .navbar-brand {
-      flex: 1;
-    }
-
-    .navbar-toggle {
-      flex: 1;
-      text-align: right;
-      cursor: pointer;
-      display: none;
-    }
-
-    .navbar-menu {
-      flex-basis: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #0081af;
-      padding: 1rem 0;
-    }
-
-    .navbar-menu li {
-      display: inline-block;
-      margin-right: 1rem;
-    }
-
-    .navbar-menu li:last-child {
-      margin-right: 0;
-    }
-
-    .navbar-menu li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-    }
-
-    .navbar-menu li a:hover {
-      background-color: #005a80;
-    }
-
-    .hero {
-      margin-top: 2rem;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-    }
-
-    .course-card {
-      border: 1px solid #ccc;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #0081af;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 1rem;
-    }
-    
-        /* HERE */
-    .course-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 4%;
-      object-fit: cover;
-      padding: 3rem;
-      /*margin: auto;*/
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-
-    footer {
-      text-align: center;
-      background-color: #333;
-      color: #fff;
-      padding: 1rem;
-    }
-
-    .social-icons {
-      margin-bottom: 1rem;
-    }
-
-    .social-icons a {
-      display: inline-block;
-      margin-right: 1rem;
-      color: #fff;
-      text-decoration: none;
-      font-size: 20px;
-    }
-
-    .go-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-    }
-
-    .go-to-top a {
-      background-color: #0081af;
-      color: #fff;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 50%;
-    }
-
-    .founder-section {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .founder-image {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 0 auto;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .founder-quote {
-      margin-top: 1rem;
-      font-style: italic;
-    }
-
-    @media (max-width: 768px) {
-      .navbar-menu {
-        display: none;
-        background-color: #0081af;
-        text-align: center;
-        padding: 1rem 0;
-      }
-
-      .navbar-menu.active {
-        animation: fadeInUp 0.3s;
-        display: block;
-      }
-
-      .navbar-menu li {
-        display: block;
-        margin-bottom: 1rem;
-      }
-
-      .navbar-menu li a {
-        display: block;
-        padding: 0.5rem;
-        color: #fff;
-      }
-
-      .navbar-toggle {
-        display: block;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -242,19 +53,20 @@
     <div class="container">
       <h2>Explore Our Courses</h2>
       <div class="course-card">
-        <img class="course-img"  src="soft_icon.png" alt="Course 1">
+        <img class="course-img" src="soft_icon.png" alt="Course 1">
         <h3>Software Development</h3>
         <p>Master the art of coding with our comprehensive software development courses. From web development to mobile
           app development, we've got you covered!</p>
       </div>
       <div class="course-card">
-        <img class="course-img"  src="maths_icon.png" alt="Course 2">
+        <img class="course-img" src="maths_icon.png" alt="Course 2">
         <h3>Mathematics</h3>
-        <p>Sharpen your mathematical skills with our interactive courses. From algebra to calculus, you'll find the right
+        <p>Sharpen your mathematical skills with our interactive courses. From algebra to calculus, you'll find the
+          right
           course for you.</p>
       </div>
       <div class="course-card">
-        <img class="course-img"  src="art_icon.png" alt="Course 3">
+        <img class="course-img" src="art_icon.png" alt="Course 3">
         <h3>Art & Design</h3>
         <p>Unleash your creativity with our art and design courses. Learn from experienced artists and explore various
           mediums.</p>
@@ -266,7 +78,8 @@
   <section id="practical">
     <div class="container">
       <h2>Practical Learning</h2>
-      <p>At Brain Gain, we believe in hands-on learning. Our practical section provides real-world projects and exercises to
+      <p>At Brain Gain, we believe in hands-on learning. Our practical section provides real-world projects and
+        exercises to
         enhance your skills and gain valuable experience.</p>
       <a href="Practical.html" class="btn">Start Practicing</a>
     </div>
@@ -302,7 +115,8 @@
       <h2>Meet Our Founder</h2>
       <div class="founder-section">
         <img src="founder.jpeg" alt="Founder Image" class="founder-image">
-        <p class="founder-quote">"Education is the key to unlocking your potential and achieving your dreams." - Moses Sunday</p>
+        <p class="founder-quote">"Education is the key to unlocking your potential and achieving your dreams." - Moses
+          Sunday</p>
       </div>
     </div>
   </section>
