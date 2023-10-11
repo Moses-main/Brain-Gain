@@ -6,7 +6,13 @@
 This is an e-learning site. It will offer different range of learning and also resources needed for any online course.
 
 ## Introduction: 
-Briefly introduce the educational website and its purpose.
+Welcome to our tech e-learning platform! 
+
+We are dedicated to providing high-quality courses that help learners develop new skills and advance their careers. 
+
+Our platform is designed with the vision of facilitating learners to earn while learning, so you can gain valuable knowledge and earn credentials that will help you succeed in today's competitive job market. 
+
+Our courses cover a wide range of topics, from programming and web development to data science and cybersecurity. With great courses and a user-friendly interface, our platform makes it easy to learn at your own pace and on your own schedule.
 
 ## Features: 
 Outline the key features of the website, such as interactive lessons, quizzes, forums, or online courses.
