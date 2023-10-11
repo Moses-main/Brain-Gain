@@ -1,5 +1,5 @@
 # Brain Grain  
-***Still On Process***
+*UNDER DEVELOPMENT*
 
 <image href="/founder.jpeg" alt="Brand image"></image>
 
