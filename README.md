@@ -40,6 +40,7 @@ Practicalized online:
 17. Content Writing 
 
 Require offline practice:
+
 18. Project Management 
 19. IT Support 
 20. Database Administration
