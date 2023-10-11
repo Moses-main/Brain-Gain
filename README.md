@@ -18,7 +18,31 @@ Provide instructions on how to navigate the website, create an account, and acce
 Describe the organization and structure of the website, including different sections or categories of content.
 
 ## Curriculum: 
-Explain the subjects or topics covered by the website and provide an overview of the educational materials available.
+These are the courses that would be offered on this platform.
+
+Practicalized online:
+1. Web Development 
+2. Mobile App Development 
+3. Data Science 
+4. Artificial Intelligence 
+5. Machine Learning 
+6. Cybersecurity 
+7. Cloud Computing 
+8. Internet of Things (IoT) 
+9. Blockchain 
+10. Game Development 
+11. UX/UI Design 
+12. Digital Marketing 
+13. Graphic Design 
+14. Video Editing 
+15. SEO Optimization 
+16. Social Media Marketing 
+17. Content Writing 
+
+Require offline practice:
+18. Project Management 
+19. IT Support 
+20. Database Administration
 
 ## User Guide: 
 Offer guidance on how to effectively use the website's features or tools, such as setting goals, tracking progress, or submitting assignments.
