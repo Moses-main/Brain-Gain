@@ -71,5 +71,3 @@ Mention any updates, new features, or bug fixes made to the website and include 
 
 ## Additional Resources: 
 Provide links to related educational websites, recommended books, or external articles that can further enhance the learning experience.
-
-/* Remember, a README file should be concise, well-organized, and easy to understand, providing essential information to users about the educational website.*/
