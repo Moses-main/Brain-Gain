@@ -15,19 +15,32 @@
       color: #fff;
       text-align: center;
       padding: 2rem 0;
+      height: 100px;
     }
 
     .navbar {
-      display: flex;
+      /* display: flex; */
+      float: right;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: wrap; 
       border-radius: 10px;
       overflow: hidden;
+      margin: 0;
+      padding: 0;
+
     }
 
     .navbar-brand {
+      float: left;
+      overflow: hidden;
       flex: 1;
+      display:inline;
+    }
+    
+    .navbar-brand h1{
+      font-size: xxx-large;
+      text-decoration: underline white;
     }
 
     .navbar-toggle {
@@ -38,17 +51,21 @@
     }
 
     .navbar-menu {
-      flex-basis: 100%;
-      display: flex;
+      float: right;
+      overflow: hidden;
+      /* flex-basis: 100%;
+      display: flex; */
       justify-content: center;
       align-items: center;
       background-color: #0081af;
-      padding: 1rem 0;
+      padding:1rem 0;
+      margin:0;
+
     }
 
     .navbar-menu li {
       display: inline-block;
-      margin-right: 1rem;
+      margin-right:0;
     }
 
     .navbar-menu li:last-child {
@@ -67,6 +84,8 @@
 
     .hero {
       margin-top: 2rem;
+      text-align: center;
+      text-decoration: underline;
     }
 
     .container {
