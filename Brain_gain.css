@@ -1,4 +1,213 @@
 /* Reset some default styles */
+/*<<<<<<< main*/
+    body, h1, h2, h3, p, ul, li, a {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Global styles */
+    header {
+      background-color: #0081af;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 0;
+      height: 100px;
+    }
+
+    .navbar {
+      /* display: flex; */
+      float: right;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; 
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .navbar-brand {
+      float: left;
+      overflow: hidden;
+      flex: 1;
+      display:inline;
+    }
+    
+    .navbar-brand h1{
+      font-size: xxx-large;
+      text-decoration: underline white;
+    }
+
+    .navbar-toggle {
+      flex: 1;
+      text-align: right;
+      cursor: pointer;
+      display: none;
+    }
+
+    .navbar-menu {
+      float: right;
+      overflow: hidden;
+      /* flex-basis: 100%;
+      display: flex; */
+      justify-content: center;
+      align-items: center;
+      background-color: #0081af;
+      padding:1rem 0;
+      margin:0;
+
+    }
+
+    .navbar-menu li {
+      display: inline-block;
+      margin-right:0;
+    }
+
+    .navbar-menu li:last-child {
+      margin-right: 0;
+    }
+
+    .navbar-menu li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar-menu li a:hover {
+      background-color: #005a80;
+    }
+
+    .hero {
+      margin-top: 2rem;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .course-card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #0081af;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+    
+        /* HERE */
+    .course-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 4%;
+      object-fit: cover;
+      padding: 3rem;
+      /*margin: auto;*/
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    .social-icons {
+      margin-bottom: 1rem;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .go-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .go-to-top a {
+      background-color: #0081af;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .founder-section {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .founder-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .founder-quote {
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+        background-color: #0081af;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      .navbar-menu.active {
+        animation: fadeInUp 0.3s;
+        display: block;
+      }
+
+      .navbar-menu li {
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      .navbar-menu li a {
+        display: block;
+        padding: 0.5rem;
+        color: #fff;
+      }
+
+      .navbar-toggle {
+        display: block;
+      }
+        } 
+/*=======*/
 body,
 h1,
 h2,
@@ -200,6 +409,7 @@ footer {
     display: block;
   }
 }
+/*>>>>>>> main*/
 
 /* END OF THE STYLE FOR THE HOMEPAGE */
 
