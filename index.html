@@ -1,225 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brain Gain - Your E-Learning Platform</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="Brain_gain.css" />
-  </head>
 
-  <body>
-    <header id="header">
-      <div class="container">
-        <nav class="navbar">
-          <div class="navbar-brand">
-            <h1>Brain Gain</h1>
-          </div>
-          <div class="navbar-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-          </div>
-          <nav class="navbar-menu" id="menu">
-            <ul>
-              <li><a href="About.html">About</a></li>
-              <li><a href="Courses.html">Courses</a></li>
-              <li><a href="Practical.html">Practical</a></li>
-              <li><a href="#community">Community</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#dashboard">Dashboard</a></li>
-            </ul>
-          </nav>
-        </nav>
-      </div>
-      <div class="hero">
-        <div class="container">
-          <h1>Welcome to Brain Gain</h1>
-          <p>Your One-Stop E-Learning Platform</p>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain Gain - Your E-Learning Platform</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="Brain_gain.css" />
+</head>
 
-    <section id="about">
-      <div class="container">
-        <h2>About Brain Gain</h2>
-        <p>
-          Brain Gain is a comprehensive e-learning platform that offers a wide
-          range of courses in various disciplines, including software
-          development, maths, science, law, art, music, culture, and more. Our
-          mission is to provide high-quality education and practical learning
-          experiences to students from all walks of life.
-        </p>
-      </div>
-    </section>
-
-<!-- <<<<<<< main<!--  -->
 <body>
-  <header id="header">
-    <div class="navbar-brand">
-      <h1>Brain Gain</h1>
-      <span>Your One-Stop E-Learning Platform</span>
-    </div>
-    <!-- <div class="container"> -->
-     
-      <nav class="navbar">
-        
-        <div class="navbar-toggle" onclick="toggleMenu()">
-          <i class="fas fa-bars"></i>
-        </div>
-        <nav class="navbar-menu" id="menu">
-          <ul>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Courses.html">Courses</a></li>
-            <li><a href="Practical.html">Practical</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#dashboard">Dashboard</a></li>
-          </ul>
-        </nav>
-      </nav>
-    <!-- </div> -->
-  <!-- </div> -->
-  </header>
-  <div class="hero">
+  <div class="topnav" id="myTopnav">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#contact">Contact</a>
+    <a href="#community">Community</a>
+    <a href="Practical.html">Practical</a>
+    <a href="Courses.html">Courses</a>
+    <a href="About.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <section id="welcome">
     <div class="container">
       <h1>Welcome to Brain Gain</h1>
-      <p></p>
-    </div></div>
-<!-- ======= -->
-    <section id="courses">
-      <div class="container">
-        <h2>Explore Our Courses</h2>
-        <div class="course-card">
-          <img class="course-img" src="images/soft_icon.png" alt="Course 1" />
-          <h3>Software Development</h3>
-          <p>
-            Master the art of coding with our comprehensive software development
-            courses. From web development to mobile app development, we've got
-            you covered!
-          </p>
-        </div>
-        <div class="course-card">
-          <img class="course-img" src="images/maths_icon.png" alt="Course 2" />
-          <h3>Mathematics</h3>
-          <p>
-            Sharpen your mathematical skills with our interactive courses. From
-            algebra to calculus, you'll find the right course for you.
-          </p>
-        </div>
-        <div class="course-card">
-          <img class="course-img" src="images/art_icon.png" alt="Course 3" />
-          <h3>Art & Design</h3>
-          <p>
-            Unleash your creativity with our art and design courses. Learn from
-            experienced artists and explore various mediums.
-          </p>
-        </div>
-        <!-- Add more course cards for other disciplines -->
-      </div>
-    </section>*
-<!-- /*>>>>>>> main*/ -->
+      <p>Your One-Stop E-Learning Platform</p>
+    </div>
+  </section>
+  <section id="about">
+    <center>
+      <h2>About Brain Gain</h2>
+    </center>
+    <div class="container">
+      <p>
+        Brain Gain is a comprehensive e-learning platform that offers a wide
+        range of courses in various disciplines, including software
+        development, maths, science, law, art, music, culture, and more. Our
+        mission is to provide high-quality education and practical learning
+        experiences to students from all walks of life.
+      </p>
+    </div>
+  </section>
 
-    <section id="practical">
-      <div class="container">
-        <h2>Practical Learning</h2>
+  <section id="courses">
+    <center>
+      <h2>Explore Our Courses</h2>
+    </center>
+    <div class="container-flex">
+      <div class="course-card">
+        <img class="course-img" src="images/soft_icon.png" alt="Course 1" />
+        <h3>Software Development</h3>
         <p>
-          At Brain Gain, we believe in hands-on learning. Our practical section
-          provides real-world projects and exercises to enhance your skills and
-          gain valuable experience.
+          Master the art of coding with our comprehensive software development
+          courses. From web development to mobile app development, we've got
+          you covered!
         </p>
-        <a href="Practical.html" class="btn">Start Practicing</a>
       </div>
-    </section>
-
-    <section id="community">
-      <div class="container">
-        <h2>Join Our Community</h2>
+      <div class="course-card">
+        <img class="course-img" src="images/maths_icon.png" alt="Course 2" />
+        <h3>Mathematics</h3>
         <p>
-          Interact with other learners, share ideas, and collaborate on projects
-          in our vibrant community.
+          Sharpen your mathematical skills with our interactive courses. From
+          algebra to calculus, you'll find the right course for you.
         </p>
-        <!-- Add community features and interactions -->
       </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
+      <div class="course-card">
+        <img class="course-img" src="images/art_icon.png" alt="Course 3" />
+        <h3>Art & Design</h3>
         <p>
-          If you have any questions or need assistance, feel free to get in
-          touch with our support team.
+          Unleash your creativity with our art and design courses. Learn from
+          experienced artists and explore various mediums.
         </p>
-        <a href="mailto: moseschizaram8@gmail.com" class="btn"
-          >Contact Support</a
-        >
       </div>
-    </section>
+      <!-- Add more course cards for other disciplines -->
+    </div>
+  </section>*
+  <!-- /*>>>>>>> main*/ -->
 
-    <section id="dashboard">
-      <div class="container">
-        <h2>Account Dashboard</h2>
-        <p>
-          Track your progress, enroll in courses, and manage your learning
-          journey with our personalized dashboard.
+  <section id="practical">
+    <center>
+      <h2>Practical Learning</h2>
+    </center>
+    <div class="container">
+      <p>
+        At Brain Gain, we believe in hands-on learning. Our practical section
+        provides real-world projects and exercises to enhance your skills and
+        gain valuable experience.
+      </p>
+      <a href="Practical.html" class="btn">Start Practicing</a>
+    </div>
+  </section>
+
+  <section id="community">
+    <center>
+      <h2>Join Our Community</h2>
+    </center>
+    <div class="container">
+      <p>
+        Interact with other learners, share ideas, and collaborate on projects
+        in our vibrant community.
+      </p>
+      <!-- Add community features and interactions -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <center>
+      <h2>Contact Us</h2>
+    </center>
+    <div class="container">
+      <p>
+        If you have any questions or need assistance, feel free to get in
+        touch with our support team.
+      </p>
+      <a href="mailto: moseschizaram8@gmail.com" class="btn">Contact Support</a>
+    </div>
+  </section>
+
+  <section id="dashboard">
+    <center>
+      <h2>Account Dashboard</h2>
+    </center>
+    <div class="container">
+      <p>
+        Track your progress, enroll in courses, and manage your learning
+        journey with our personalized dashboard.
+      </p>
+      <!-- Add account dashboard features -->
+      <a href="Dashboard.html" class="btn"> Dashboard</a>
+    </div>
+  </section>
+
+  <section id="founder">
+    <center>
+      <h2>Meet Our Founder</h2>
+    </center>
+    <div class="container">
+      <div class="founder-section">
+        <img src="images/founder.jpeg" alt="Founder Image" class="founder-image" />
+        <p class="founder-quote">
+          "Education is the key to unlocking your potential and achieving your
+          dreams." - Moses Sunday
         </p>
-        <!-- Add account dashboard features -->
-        <a href="Dashboard.html" class="btn"> Dashboard</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="founder">
-      <div class="container">
-        <h2>Meet Our Founder</h2>
-        <div class="founder-section">
-          <img
-            src="images/founder.jpeg"
-            alt="Founder Image"
-            class="founder-image"
-          />
-          <p class="founder-quote">
-            "Education is the key to unlocking your potential and achieving your
-            dreams." - Moses Sunday
-          </p>
-        </div>
+  <footer>
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://wa.link/y0mqz2" class="fab fa-whatsapp"></a>
+        <a href="
+https://twitter.com/SundayMoses0?t=bsDwcjAXaHMTh5-4g1vnLQ&s=09" class="fab fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/moses-sunday" class="fab fa-linkedin"></a>
+        <a href="
+https://www.instagram.com/invites/contact/?i=1btavk5f09zy2&utm_content=rwiteg3" class="fab fa-instagram"></a>
       </div>
-    </section>
+      <p>&copy; 2023 Brain Gain. All rights reserved.</p>
+    </div>
+    <div class="go-to-top">
+      <a href="#header" class="fas fa-arrow-up"></a>
+    </div>
+  </footer>
 
-    <footer>
-      <div class="container">
-        <div class="social-icons">
-          <a href="https://wa.link/y0mqz2" class="fab fa-whatsapp"></a>
-          <a
-            href="
-https://twitter.com/SundayMoses0?t=bsDwcjAXaHMTh5-4g1vnLQ&s=09"
-            class="fab fa-twitter"
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/moses-sunday"
-            class="fab fa-linkedin"
-          ></a>
-          <a
-            href="
-https://www.instagram.com/invites/contact/?i=1btavk5f09zy2&utm_content=rwiteg3"
-            class="fab fa-instagram"
-          ></a>
-        </div>
-        <p>&copy; 2023 Brain Gain. All rights reserved.</p>
-      </div>
-      <div class="go-to-top">
-        <a href="#header" class="fas fa-arrow-up"></a>
-      </div>
-    </footer>
-
-<!-- <<<<<<< main
+  <!-- <<<<<<< main
  ======= -->
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("active");
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
 <!-- >>>>>>> main -->
+
 </html>
