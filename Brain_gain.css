@@ -13,7 +13,7 @@ a {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
 }
 
@@ -36,7 +36,6 @@ header {
   overflow: hidden;
   margin: 0;
   padding: 0;
-
 }
 
 .navbar-brand {
@@ -68,7 +67,6 @@ header {
   background-color: #0081af;
   padding: 1rem 0;
   margin: 0;
-
 }
 
 .navbar-menu li {
@@ -89,11 +87,11 @@ header {
 .navbar-menu li a:hover {
   background-color: #005a80;
 }
-#welcome{
+#welcome {
   background-color: #005a80;
-  color:white;
-  min-height:200px;
-  height:20%;
+  color: white;
+  min-height: 200px;
+  height: 20%;
   text-align: center;
 }
 .hero {
@@ -108,7 +106,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
 h2 {
@@ -145,7 +144,6 @@ h2 {
   /*margin: auto;*/
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 footer {
   text-align: center;
@@ -278,7 +276,9 @@ header {
   display: none;
 }
 @media screen and (max-width: 600px) {
-  .topnav a {display: none;}
+  .topnav a {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -286,7 +286,9 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -326,6 +328,8 @@ h2 {
   padding: 1rem;
   margin-bottom: 1rem;
   min-width: 250px;
+  border: 1px solid silver;
+  border-radius: 5px;
 }
 
 .btn {
