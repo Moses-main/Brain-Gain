@@ -72,4 +72,4 @@ Mention any updates, new features, or bug fixes made to the website and include 
 ## Additional Resources: 
 Provide links to related educational websites, recommended books, or external articles that can further enhance the learning experience.
 
-<a great="https://join.slack.com/t/brain-gain-hq/shared_invite/zt-25a18jyyv-~Ft6sq5PPdFzveKi_MmZuA" > Join slack community</a>
+<a href="https://join.slack.com/t/brain-gain-hq/shared_invite/zt-25a18jyyv-~Ft6sq5PPdFzveKi_MmZuA" > Join slack community</a>
