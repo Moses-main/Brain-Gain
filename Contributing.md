@@ -70,6 +70,6 @@ Note: Create and push your PR's to a new branch (`main` is used for production).
 - Hurray! You successfully made a contribution!
 
 
-# (Join Brain Gain Community) [https://join.slack.com/t/brain-gain-hq/shared_invite/zt-25a18jyyv-~Ft6sq5PPdFzveKi_MmZuA]
+(Join Brain Gain Community) [https://join.slack.com/t/brain-gain-hq/shared_invite/zt-25a18jyyv-~Ft6sq5PPdFzveKi_MmZuA]
  
 ---
