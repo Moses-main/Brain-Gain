@@ -1,212 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brain Gain - Your E-Learning Platform</title>
+    <link
+      rel="shortcut icon"
+      href="/images/braingain_favicon.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Brain_gain.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courses - Brain Gain</title>
-  <!-- Add swiper CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <style>
-    /* Global Styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    /* Header Styles */
-    header {
-      background-color: #002147; /* Dark Blue */
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    /* Navigation Styles */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav a {
-      margin: 0 10px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    /* Courses Section Styles */
-    .courses {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .courses h1 {
-      font-size: 32px;
-      color: #002147; /* Dark Blue */
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .swiper-container {
-      margin: 20px 0;
-      height: 40%;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .swiper-slide {
-      text-align: center;
-      padding: 40px 0;
-    }
-
-    .swiper-slide h2 {
-      font-size: 24px;
-      color: #002147; /* Dark Blue */
-      margin-bottom: 10px;
-    }
-
-    .swiper-slide p {
-      font-size: 16px;
-      color: #555;
-    }
-
-    /* Signup and Login Form Styles */
-    .form-container {
-      max-width: 400px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .form-container h2 {
-      font-size: 24px;
-      color: #002147; /* Dark Blue */
-      margin-bottom: 20px;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      font-size: 16px;
-      color: #555;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .form-group input[type="text"],
-    .form-group input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    .form-group button {
-      background-color: #002147; /* Dark Blue */
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .form-group button:hover {
-      background-color: #001a38;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="courses.html">Courses</a>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#contact">Contact</a>
+      <a href="#community">Community</a>
+      <a href="Practical.html">Practical</a>
+      <a href="Courses.html">Courses</a>
       <a href="About.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <section class="courses">
-      <h1>Available Courses</h1>
-
-      <!-- Add swiper container -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <!-- Course 1 -->
-          <div class="swiper-slide">
-           <!-- <img class="course-img"  src="images/soft_icon.png" alt="Course 1">-->
-            <h2>Software Development Course</h2>
-            <p>This course covers HTML, CSS, JavaScript, Python, and more. Get started on your journey to becoming a software developer!</p>
-          </div>
-          <!-- Course 2 -->
-          <div class="swiper-slide">
-            <h2>Arts and Design Course</h2>
-            <p>Unleash your creativity with our arts and design course. Learn drawing, painting, and digital design skills.</p>
-          </div>
-          <!-- Course 3 -->
-          <div class="swiper-slide">
-            <h2>Mathematics Course</h2>
-             <!--<img class="course-img"  src="images/dp.jpeg" alt="Course 2">-->
-            <p>Sharpen your math skills with our comprehensive mathematics course. From basic algebra to advanced calculus.</p>
-          </div>
-          <!-- Add more courses here -->
-        </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <section id="welcome">
+      <div class="container">
+        <h1>Welcome to Brain Gain</h1>
+        <p>Your One-Stop E-Learning Platform</p>
       </div>
-
+    </section>
+    <section id="about">
+      <center>
+        <h2>About Brain Gain</h2>
+      </center>
+      <div class="container">
+        <p>
+          Brain Gain is a comprehensive e-learning platform that offers a wide
+          range of courses in tech.
+        </p>
+      </div>
     </section>
 
-    <div class="form-container">
-      <h2>Sign Up or Log In</h2>
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" placeholder="Enter your username">
+    <section id="courses">
+      <center>
+        <h2>Explore Our Courses</h2>
+        <p>
+          Embark on an educational journey with us. Enroll in any course today
+          and take the first step towards a future filled with opportunities,
+          innovation, and mastery of new skills! Your adventure starts here.
+        </p>
+        <br />
+      </center>
+      <div class="container-flex">
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/10110/10110708.png"
+            alt="Course 1"
+          />
+          <h3>Web Development</h3>
+          <p>
+            Master the art of coding with our comprehensive software development
+            courses. From web development to mobile app development, we've got
+            you covered!
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/8750/8750881.png"
+            alt="Course 2"
+          />
+          <h3>Mobile App Development</h3>
+          <p>
+            Step into the mobile revolution! Transform your innovative app ideas
+            into reality. Our mobile app development courses will teach you how
+            to create apps for both iOS and Android platforms. From concept and
+            design to deployment and optimization, you'll gain the knowledge and
+            hands-on experience needed to thrive in this dynamic industry.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/9844/9844877.png"
+            alt="Course 2"
+          />
+          <h3>Data Science</h3>
+          <p>
+            Decode the data universe! Data science is more than just numbers;
+            it's about discovering valuable insights and patterns in data. Dive
+            into the world of data analysis using Python, R, and powerful data
+            science tools. Our courses will equip you with the skills to make
+            data-driven decisions, forecast trends, and turn raw data into
+            actionable information.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://image.shutterstock.com/image-vector/3d-artificial-intelligence-digital-brain-260nw-2288372371.jpg"
+            alt="Course 2"
+          />
+          <h3>Artificial Intelligence</h3>
+          <p>
+            Embark on a journey into the future! Our AI courses will immerse you
+            in the exciting world of Artificial Intelligence. Understand the
+            foundations, principles, and applications of AI, and learn to create
+            intelligent systems that can reason, learn, and adapt. Join us and
+            shape the future with AI-powered solutions.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="images/machine_learning.png"
+            alt="Course 2"
+          />
+          <h3>Machine Learning</h3>
+          <p>
+            Train machines to think! Machine learning is the key to automation,
+            from recommendation systems to image recognition. Our courses will
+            empower you to build and deploy machine learning models, harnessing
+            the power of algorithms to make predictions and decisions based on
+            data.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/6865/6865349.png"
+            alt="Course 2"
+          />
+          <h3>Cybersecurity</h3>
+          <p>
+            Guard the digital realm! Learn the skills necessary to protect data,
+            networks, and systems from cyber threats. Our cybersecurity courses
+            will equip you with the knowledge to detect vulnerabilities, respond
+            to incidents, and secure your digital assets. Join us and become a
+            guardian of the digital world.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/3208/3208676.png"
+            alt="Course 2"
+          />
+          <h3>Cloud Computing</h3>
+          <p>
+            Think globally, act locally! Cloud computing is the backbone of
+            modern applications. Master cloud services like AWS, Azure, and
+            Google Cloud to deploy, scale, and manage applications worldwide.
+            Whether you're a developer, sysadmin, or architect, our courses
+            provide the tools to build scalable solutions.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/10355/10355707.png"
+            alt="Course 2"
+          />
+          <h3>Internet of Things (IoT)</h3>
+          <p>
+            Connect the unconnected! Dive into the Internet of Things and learn
+            to create innovative, interconnected solutions. From smart homes to
+            industrial automation, our IoT courses will empower you to build
+            devices and systems that collect, process, and act on data.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/9041/9041212.png"
+            alt="Course 2"
+          />
+          <h3>Blockchain</h3>
+          <p>
+            Unlock the future of trust and transparency! Explore the technology
+            behind cryptocurrencies and its real-world applications. Our
+            blockchain courses will demystify this transformative technology,
+            enabling you to create secure and decentralized solutions.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/2029/2029543.png"
+            alt="Course 3"
+          />
+          <h3>Game Development</h3>
+          <p>
+            Turn your game ideas into reality! Game design, coding, and 2D/3D
+            graphics - we've got it all covered. Our game development courses
+            will take you from concept to creation, guiding you through every
+            step of the game development process. Whether you're a gamer with a
+            vision or an aspiring game developer, we'll help you make your dream
+            game a reality.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/3368/3368896.png"
+            alt="Course 3"
+          />
+          <h3>UX/UI Design</h3>
+          <p>
+            Design exceptional user experiences! Dive into the world of user
+            interface and user experience design to create intuitive,
+            user-friendly applications and websites. Our courses will teach you
+            the art of human-centered design, from wireframing and prototyping
+            to usability testing and user research. Join us, and craft digital
+            experiences that leave a lasting impression.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/7011/7011353.png"
+            alt="Course 3"
+          />
+          <h3>Digital Marketing</h3>
+          <p>
+            Navigate the digital landscape like a pro. Dive into social media
+            marketing, SEO strategies, email campaigns, and online advertising.
+            Promote brands, products, and services in the digital age with a
+            comprehensive marketing toolkit.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/3607/3607459.png"
+            alt="Course 3"
+          />
+          <h3>SEO Optimization</h3>
+          <p>
+            Unleash your creativity with our art and design courses. Learn from
+            experienced artists and explore various mediums.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/5968/5968520.png"
+            alt="Course 3"
+          />
+          <h3>Graphic Design</h3>
+          <p>
+            Unleash your creativity with our art and design courses. Learn from
+            experienced artists and explore various mediums.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="images/social_media_marketing.png"
+            alt="Course 3"
+          />
+          <h3>Social Media Marketing</h3>
+          <p>
+            Unleash your creativity with our art and design courses. Learn from
+            experienced artists and explore various mediums.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/10266/10266412.png"
+            alt="Course 3"
+          />
+          <h3>Content Writing</h3>
+          <p>
+            Become a wordsmith in the digital age. Hone your writing skills for
+            blogs, articles, and digital marketing content. Craft persuasive,
+            informative, and engaging text that connects with readers.
+          </p>
+        </div>
+        <!-- <div class="course-card">
+          <img class="course-img" src="images/art_icon.png" alt="Course 3" />
+
+          <h3>Graphic Design</h3>
+          <p>
+            Transform imagination into stunning visuals. Master graphic design
+            tools and techniques. Create eye-catching designs for print and
+            digital media, from logos and brochures to web graphics.
+          </p>
+        </div> -->
+        <!-- Add more course cards for other disciplines -->
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="images/project_management.png"
+            alt="Course 3"
+          />
+          <h3>Project Management</h3>
+          <p>
+            Lead with confidence and deliver results. Learn the art of project
+            planning, execution, and control. Become an effective project
+            manager who brings teams together, meets goals, and drives success.
+          </p>
+        </div>
+        <div class="course-card">
+          <img class="course-img" src="images/art_icon.png" alt="Course 3" />
+          <h3>IT Support</h3>
+          <p>
+            LBe the go-to tech guru. Master troubleshooting, tech support, and
+            system maintenance. Provide invaluable assistance to keep digital
+            systems running smoothly and solve tech dilemmas.
+          </p>
+        </div>
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/9698/9698555.png"
+            alt="Course 3"
+          />
+          <h3>Database Administration</h3>
+          <p>
+            Guard the digital vault of data. Dive into the realm of database
+            management. Manage, secure, and optimize valuable data assets.
+            Become the custodian of information, ensuring its availability and
+            integrity.
+          </p>
+        </div>
+        <div class="course-card">
+          <img class="course-img" src="images/devops.png" alt="Course 3" />
+          <h3>DevOps and Continuous Integration/Continuous Deployment</h3>
+          <p>
+            Unleash the power of DevOps and CI/CD to enhance software
+            development and delivery. Gain expertise in automating processes,
+            managing infrastructure as code, and achieving seamless, continuous
+            integration and deployment.
+          </p>
+        </div>
+        <div class="course-card">
+          <img class="course-img" src="images/art_icon.png" alt="Course 3" />
+          <h3>Data Engineering</h3>
+          <p>
+            Become a data engineer and architect data pipelines that drive
+            insights and innovation. Explore big data tools and techniques,
+            build data warehouses, and ensure data quality and availability.
+          </p>
+        </div>
+        <div class="course-card">
+          <img class="course-img" src="images/fullstack.png" alt="Course 3" />
+          <h3>Full-Stack Development</h3>
+          <p>
+            Master the complete development stack! Become a full-stack developer
+            by exploring both front-end and back-end technologies. Create web
+            applications from start to finish, covering everything from user
+            interfaces to server-side logic.
+          </p>
+        </div>
+        <!-- Add more course cards for other disciplines -->
+
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="images/augmented_reality.png"
+            alt="Course 3"
+          />
+          <h3>Augmented Reality (AR) Development</h3>
+          <p>
+            Step into the future of AR! Dive into the world of augmented reality
+            development. Create interactive and immersive AR experiences for
+            mobile apps and wearable devices. Transform reality and add digital
+            magic to the world.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="images/quantum_computing.png"
+            alt="Course 3"
+          />
+          <h3>Quantum Computing</h3>
+          <p>
+            Enter the realm of quantum computing! Discover quantum mechanics and
+            quantum algorithms. Develop solutions that harness the power of
+            quantum bits (qubits) to solve complex problems with unparalleled
+            speed.
+          </p>
+        </div>
+        <!-- Add more course cards for other disciplines -->
+
+        <div class="course-card">
+          <img
+            class="course-img"
+            src="https://cdn-icons-png.flaticon.com/128/2488/2488086.png"
+            alt="Course 3"
+          />
+          <h3>Ethical Hacking and Penetration Testing</h3>
+          <p>
+            Become a cybersecurity hero! Learn ethical hacking techniques to
+            assess and strengthen system security. Uncover vulnerabilities,
+            perform penetration tests, and fortify networks against cyber
+            threats.
+          </p>
+        </div>
+        <!-- Add more course cards for other disciplines -->
+
+        <div class="course-card">
+          <img class="course-img" src="images/embed.png" alt="Course 3" />
+          <h3>Embedded Systems Development</h3>
+          <p>
+            Enter the world of tiny computers. Master embedded systems
+            development for IoT, robotics, and more. Design low-level hardware
+            interactions and create systems that power everyday devices.
+          </p>
+        </div>
+        <!-- Add more course cards for other disciplines -->
+
+        <div class="course-card">
+          <img class="course-img" src="images/art_icon.png" alt="Course 3" />
+          <h3>3D Printing and Design</h3>
+          <p>
+            Unleash your creativity with 3D printing! Learn 3D modeling and
+            printing techniques to bring your designs to life. Create
+            prototypes, custom products, and artistic creations.
+          </p>
+        </div>
+        <!-- Add more course cards for other disciplines -->
+
+        <div class="course-card">
+          <img class="course-img" src="images/art_icon.png" alt="Course 3" />
+          <h3>Edge Computing</h3>
+          <p>
+            Bring computing closer to the source of data. Master edge computing
+            for low-latency and real-time applications. Optimize processing and
+            decision-making at the edge of the network.
+          </p>
+        </div>
+        <!-- Add more course cards for other disciplines -->
+
+        <div class="course-card">
+          <img class="course-img" src="images/voice_user.png" alt="Course 3" />
+          <h3>Voice User Interface (VUI) Design</h3>
+          <p>
+            Design voice-controlled experiences. Dive into VUI design for smart
+            speakers, chatbots, and virtual assistants. Create conversational
+            interfaces that respond to voice commands.
+          </p>
+        </div>
+        <div class="course-card">
+          <img class="course-img" src="images/robotic.png" alt="Course 3" />
+          <h3>Automation and Robotics</h3>
+          <p>
+            Master the art of automation and robotics. Learn to design, build,
+            and program robots for various applications. Explore industrial
+            automation, home automation, and robotics in healthcare.
+          </p>
+        </div>
       </div>
-
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" placeholder="Enter your password">
+    </section>
+    <section id="practical">
+      <center>
+        <h2>Practical Learning</h2>
+      </center>
+      <div class="container">
+        <p>
+          At Brain Gain, we believe in hands-on learning. Our practical section
+          provides real-world projects and exercises to enhance your skills and
+          gain valuable experience.
+        </p>
+        <a href="Practical.html" class="btn">Start Practicing</a>
       </div>
+    </section>
 
-      <div class="form-group">
-        <button>Sign Up</button>
-        <button>Log In</button>
+    <section id="community">
+      <center>
+        <h2>Join Our Community</h2>
+      </center>
+      <div class="container">
+        <p>
+          Interact with other learners, share ideas, and collaborate on projects
+          in our vibrant community.
+        </p>
+        <!-- Add community features and interactions -->
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Add swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    // Initialize Swiper
-    const swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
-</body>
+    <section id="contact">
+      <center>
+        <h2>Contact Us</h2>
+      </center>
+      <div class="container">
+        <p>
+          If you have any questions or need assistance, feel free to get in
+          touch with our support team.
+        </p>
+        <a href="mailto: moseschizaram8@gmail.com" class="btn"
+          >Contact Support</a
+        >
+      </div>
+    </section>
 
-  </html>
-  
+    <section id="dashboard">
+      <center>
+        <h2>Account Dashboard</h2>
+      </center>
+      <div class="container">
+        <p>
+          Track your progress, enroll in courses, and manage your learning
+          journey with our personalized dashboard.
+        </p>
+        <!-- Add account dashboard features -->
+        <a href="Dashboard.html" class="btn"> Dashboard</a>
+      </div>
+    </section>
+
+    <section id="founder">
+      <center>
+        <h2>Meet Our Founder</h2>
+      </center>
+      <div class="container">
+        <div class="founder-section">
+          <img
+            src="images/founder.jpeg"
+            alt="Founder Image"
+            class="founder-image"
+          />
+          <p class="founder-quote">
+            "Education is the key to unlocking your potential and achieving your
+            dreams." - Moses Sunday
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="social-icons">
+          <a href="https://wa.link/y0mqz2" class="fab fa-whatsapp"></a>
+          <a
+            href="
+https://twitter.com/SundayMoses0?t=bsDwcjAXaHMTh5-4g1vnLQ&s=09"
+            class="fab fa-twitter"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/moses-sunday"
+            class="fab fa-linkedin"
+          ></a>
+          <a
+            href="
+https://www.instagram.com/invites/contact/?i=1btavk5f09zy2&utm_content=rwiteg3"
+            class="fab fa-instagram"
+          ></a>
+        </div>
+        <p>&copy; 2023 Brain Gain. All rights reserved.</p>
+      </div>
+      <div class="go-to-top">
+        <a href="#header" class="fas fa-arrow-up"></a>
+      </div>
+    </footer>
+
+    <!-- <<<<<<< main
+ ======= -->
+
+    <!-- Script of the navigation of the small screen -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+  <!-- >>>>>>> main -->
+</html>

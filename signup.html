@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brain-gain - Sign Up / Log In</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 100px auto;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        font-weight: bold;
+      }
+
+      .form-control {
+        border-radius: 4px;
+      }
+
+      .btn-primary {
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      .btn-secondary {
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      .logo-section {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .logo-section img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-section">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/9586/9586035.png"
+          alt="Brain-gain Logo"
+        />
+      </div>
+      <h2 class="mb-4">Welcome to Brain-gain</h2>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="signup-tab"
+            data-toggle="tab"
+            href="#signup"
+            role="tab"
+            aria-controls="signup"
+            aria-selected="true"
+            >Sign Up</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="login-tab"
+            data-toggle="tab"
+            href="#login"
+            role="tab"
+            aria-controls="login"
+            aria-selected="false"
+            >Log In</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <!-- Sign Up Form -->
+        <div
+          class="tab-pane fade show active"
+          id="signup"
+          role="tabpanel"
+          aria-labelledby="signup-tab"
+        >
+          <form>
+            <div class="form-group">
+              <label for="signupName">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="signupName"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="signupEmail">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="signupEmail"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="signupPhone">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="signupPhone"
+                placeholder="Enter phone number"
+              />
+            </div>
+            <div class="form-group">
+              <label for="signupPassword">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="signupPassword"
+                placeholder="Password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+        </div>
+        <!-- Log In Form -->
+        <div
+          class="tab-pane fade"
+          id="login"
+          role="tabpanel"
+          aria-labelledby="login-tab"
+        >
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="loginEmail"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="loginPassword"
+                placeholder="Password"
+              />
+            </div>
+            <button type="submit" class="btn btn-secondary">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
