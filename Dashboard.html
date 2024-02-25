@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Brain Gain - Your E-Learning Platform</title>
+        <link
+          rel="shortcut icon"
+          href="/images/braingain_favicon.jpg"
+          type="image/x-icon"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="Brain_gain.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard</title>
-    <!-- Use a different CDN for the icons (Material Icons) -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="Brain_gain.css" />
-
-</head>
+        <title>Student Dashboard</title>
+        <!-- Use a different CDN for the icons (Material Icons) -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="Brain_gain.css" />
+    </head>
 
 <body>
-    <header>
-        <h1>Student Dashboard</h1>
-    </header>
+   
+    <div class="topnav" id="myTopnav">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#contact">Contact</a>
+        <a href="#community">Community</a>
+        <a href="Practical.html">Practical</a>
+        <a href="Courses.html">Courses</a>
+        <a href="About.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+
+      <!-- <header> -->
+        <br>
+        <br>
+        <h1 style="text-align: center;">Student Dashboard</h1>
+    <!-- </header> -->
 
     <div class="container">
         <!-- ... All previous content ... -->
@@ -199,5 +225,17 @@
             }
 
         </script>
+
+        <!-- Script for the navigation of the small screen -->
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+          </script>
     </body>
   </html>
