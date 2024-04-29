@@ -33,3 +33,18 @@ return {
  <div>props.enail</div>
 }}
 `
+
+# State
+
+A variable that hold data
+`const [name, setName] = useState(<default valu>)`
+
+Then defining a function that works with the state
+
+````const changeName =() =>{
+setName(!name); }```
+// this ends up toogling the default value and the given value of the property
+````
+
+Then passing the function to an element on the page
+`<button onClick={changeName}>`
