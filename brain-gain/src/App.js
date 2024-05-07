@@ -1,76 +1,86 @@
 import "./App.css";
-// importing a component
-// import { Planet } from "./Planet";
-
-// importing a state
 import { useState } from "react";
+import { Task } from "./Task";
 
 function App() {
-  // initializing a state
-  // const [age, setAge] = useState(0); //creating a use state
+  // "DO HOMEWORKS ";
+  // "WASH DISHES";
   //
-  // function to increment the age
-  // const agePlus = () => {
-  //   setAge(age + 1);
-  //   console.log(age);
-  // };
+  const [todoList, setTodoList] = useState([]);
 
-  // // initializing a state for words/alphabet
-  // const [name, setName] = useState(" ");
-  // const displayText = (e) => {
-  //   setName(e.target.value);
-  //   console.log(e.target.value);
-  // };
+  // State to represent the input value
+  const [newTask, setNewTask] = useState("");
 
-  // const [showText, setShowText] = useState(true);
-
-  // // changing the color of the page content
-  // const [mode, setMode] = useState(" ");
-
-  // const changeMode = () => {
-  //   setMode((document.getElementById("App").style.backgroundColor = "black"));
-  // };
-
-  // SOLUTION TO EXERCISES
-  const [count, setCount] = useState(0);
-
-  const Increase = () => {
-    setCount(count + 1);
+  // function for getting the value of the
+  // input value from the input element
+  const handleChange = (event) => {
+    setNewTask(event.target.value);
   };
 
-  const Decrease = () => {
-    setCount(count - 1);
+  // function for adding new task to the list of
+  // array
+  const addTask = () => {
+    const task = {
+      id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
+      taskName: newTask,
+      completed: false,
+    };
+    // adding the newtask to the old todolist using a spread operator
+    // let newTodoList = [...todoList, newTask];
+    // setTodoList(newTodoList);
+
+    setTodoList([...todoList, task]);
   };
 
-  const Zero = () => {
-    setCount(0);
+  // The function to  delete task from the list
+  const deleteTask = (id) => {
+    const newTodoList = todoList.filter((task) => {
+      return task.id !== id;
+      // This is equivalent to the code below
+      // if (task === taskName) {
+      //   return false;
+      // } else {
+      //   return true;
+      // }
+    });
+
+    setTodoList(newTodoList);
   };
+
+  // This is for updating the tasks list
+  const completeTask = (id) => {
+    todoList.map((task) => {
+      if (task.id === id) {
+        return { ...task, completed: true };
+      } else {
+        return task;
+      }
+    });
+  };
+
   return (
     <div className="App">
-      {/* ############################# */}
-      {/* This is the solution to the exercise */}
-      {count}
-      <br></br>
-      <button onClick={Increase}> Increase</button>
-      <button onClick={Decrease}> Decrease</button>
-      <button onClick={Zero}>Set to Zero</button>
-      {/* ############################## */}
-
-      {/* {name}
-      <input type="text" onChange={displayText} />
-      <button
-        onClick={() => {
-          setShowText(!showText);
-        }}
-      >
-        toggle
-      </button>
-      {showText && <h1>My name is Moses</h1>}
-
-      {/* Change the bgcolor of the page */}
-      {/* <button onClick={changeMode}>toggle mode</button> */}
+      <h1>Todo List</h1>
+      <div className="addTask">
+        <input onChange={handleChange} />
+        <button type="submit" onClick={addTask}>
+          Add Task
+        </button>
+      </div>
+      <div className="list">
+        {todoList.map((task) => {
+          return (
+            <Task
+              taskName={task.taskName}
+              id={task.id}
+              completed={task.completed}
+              deleteTask={deleteTask}
+              completeTask={completeTask}
+            />
+          );
+        })}
+      </div>
     </div>
-    // ); */}
   );
 }
 
