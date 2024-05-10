@@ -1,3 +1,4 @@
 replit.nix
 .replit
 node_modules
+.env
