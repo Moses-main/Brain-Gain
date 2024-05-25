@@ -2,7 +2,19 @@ body {
   background-color: black;
   color: white;
 }
-
+.container {
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: 1px 3px 8px orange;
+  width: 60%;
+  margin: 0px auto;
+  height: 200px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .App {
   text-align: center;
 }
