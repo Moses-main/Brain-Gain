@@ -28,13 +28,19 @@ Note: Create and push your PR's to a new branch (`main` is used for production).
 
 - Clone the repository using the following command in your terminal:
 
-- If you have already forked the project, update your copy before working.
+  `git clone https://github.com/Moses-main/Brain-Gain.git`
 
+- If you have already forked the project, update your copy before working.
 
 ### 3 : Branch Policy 🌿
 
-### Create a new branch after setting up the project locally before making any changes, so as to avoid merge conflicts while making PRs.
+Create a new branch after setting up the project locally before making any changes, so as to avoid merge conflicts while making PRs.
 
+Use this method to create a new branch
+
+    `<issue-no> <issue assigned>`
+
+e.g. `120--Fix Pagination for the course pages`
 
 ### 4 : Work on the issue assigned to you 📕
 
@@ -69,7 +75,4 @@ Note: Create and push your PR's to a new branch (`main` is used for production).
 
 - Hurray! You successfully made a contribution!
 
-
- <a href="https://join.slack.com/t/brain-gain-hq/shared_invite/zt-25a18jyyv-~Ft6sq5PPdFzveKi_MmZuA">Join slack community</a>
- 
 ---
