@@ -1,86 +1,76 @@
 import "./App.css";
-import InputWithLabel from "./components/InputWithLabel";
-import "./index.css";
-import { useState } from "react";
-// import { React, useState } from "react";
-// import Search from "./Search";
-// import ListModule from "./List";
-// import Footer from "./components/Footer";
 // import InputWithLabel from "./components/InputWithLabel";
+import "./index.css";
+// import { useState, useEffect } from "react";
+
+// const useSemiPersistentState = (key, initialState) => {
+//   const [value, setValue] = useState(localStorage.getItem(key) || initialState);
+
+//   useEffect(() => {
+//     localStorage.setItem(key, value);
+//   }, [value, key]);
+//   return [value, setValue];
+// };
+
+// const initialStories = [
+//   {
+//     title: "React",
+//     url: "https://reactjs.org/",
+//     author: "Jordan Walke",
+//     num_comments: 3,
+//     points: 4,
+//     objectID: 0,
+//   },
+//   {
+//     title: "Redux",
+//     url: "https://redux.js.org/",
+//     author: "Dan Abramov, Andrew Clark",
+//     num_comments: 2,
+//     points: 5,
+//     objectID: 1,
+//   },
+// ];
 
 const App = () => {
-  const [searchTerm, setSearchTerm] = useState("react");
+  // const [searchTerm, setSearchTerm] = useSemiPersistentState("search");
+  // const [stories, setStories] = useState(initialStories);
 
   // const searchedStories = stories.filter((story) =>
   //   story.title.toLowerCase().includes(searchTerm.toLowerCase())
   // );
 
-  // const Search = ({ search, onSearch }) => {
-  //   // const { search, onSearch } = props;
+  // const handleSearch = (event) => {
+  //   setSearchTerm(event.target.value);
+  // };
 
-  //   return (
-  //     <div>
-  //       <label htmlFor="search">Search: </label>
-  //       <input id="search" value={search} type="text" onChange={onSearch} />
-  //     </div>
+  // const List = ({ list, onRemoveItem }) =>
+  //   list.map((item) => (
+  //     <Item
+  //       key={item.key}
+  //       value={item.value}
+  //       item={item}
+  //       onRemoveItem={onRemoveItem}
+  //     />
+  //   ));
+
+  // const Item = ({ item, onRemoveItem }) => {
+  //   const handleRemoveItem = () => {
+  //     onRemoveItem(item);
+  //   };
+  // };
+
+  // const handleRemoveStory = (item) => {
+  //   const newStories = stories.filter(
+  //     (story) => item.objectID !== story.objectID
   //   );
+
+  //   setStories(newStories);
   // };
-
-  const handleSearch = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  // const List = ({ list }) =>
-  //   list.map((item) => <Item key={item.key} value={item.value} />);
-
-  // const Item = ({ item: { title, url, author, num_comments, points } }) => (
-  //   <div>
-  //     <span>
-  //       <a href={url}>{title}</a>
-  //     </span>
-  //     <span>{author}</span>
-  //     <span>{num_comments}</span>
-  //     <span>{points}</span>
-  //   </div>
-  // );
-
-  // const user = {
-  //   id: "1",
-  //   firstName: "Robin",
-  //   lastName: "Wieruch",
-  //   country: "Germany",
-  //   city: "Berlin",
-  // };
-  // const { id, country, city, ...otherAttributes } = user;
-  // console.log(otherAttributes);
 
   return (
     <div className="App">
-      {/* <h3>My Hacker Stories</h3>
-      <div>
-        <hr />
-
-        <br />
-
-        <Search search={searchTerm} onSearch={handleSearch} />
-        <br />
-      </div>
+      <h2>React Asynchronnous Data</h2>
       <hr />
-      <ListModule list={searchedStories} />
-      <hr />
-      <InputWithLabel />
-      <hr />
-      <Footer List={List} /> */}
-      <h1>My Hacker Stories</h1>
-
-      <InputWithLabel
-        id="search"
-        // value={searchTerm}
-        onInputChange={handleSearch}
-      >
-        <strong>Search: </strong>
-      </InputWithLabel>
-      <p>{searchTerm}</p>
     </div>
   );
 };
