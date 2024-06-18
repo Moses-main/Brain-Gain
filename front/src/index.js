@@ -22,46 +22,77 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+// import moment from "moment";
 
-function Tweet() {
+function Tweet({ tweet }) {
   return (
     <div className="tweet">
-      <Avatar />
+      <Avatar hash={tweet.gravatar} />
       <div className="content">
-        <NameWithHandle />
+        <NameWithHandle author={tweet.author} />
         <Time />
-        <Message />
+        <Message text={tweet.message} />
         <div className="buttons">
           <ReplyButton />
-          <RetweetButton />
-          <LikeButton />
+          <RetweetButton count={tweet.retweets} />
+          <LikeButton count={tweet.likes} />
           <MoreOptionsButton />
         </div>
       </div>
-      {/* Tweet */}
     </div>
   );
 }
 
-function Avatar() {
+var testTweet = {
+  message: "Something about cats.",
+  gravatar: "205521854/1bc31a75e7411f18d4ffbe84cc2002e5.jpeg?size=256",
+  author: {
+    handle: "catperson",
+    name: "IAMA Cat Person",
+  },
+  likes: 2,
+  retweets: 0,
+  timestamp: "2016-07-30 21:24:37",
+};
+
+// Props
+
+// function handleAction(event) {
+//   console.log("child did", event);
+// }
+
+// function Parent() {
+//   return <Child onAction={handleAction} />;
+// }
+
+// function Child({ onAction }) {
+//   return <button onClick={onAction}>Click here</button>;
+// }
+// Components
+
+function Avatar({ hash }) {
+  var url = `https://gravatar.com/userimage/${hash}`;
+
   return (
     <img
-      src="https://wwww.gravatar.com/avatar/nothing"
+      src={url}
+      // src="https://gravatar.com/userimage/205521854/1bc31a75e7411f18d4ffbe84cc2002e5.jpeg?size=256"
       className="avatar"
       alt="avatar"
     />
   );
 }
 
-function Message() {
-  return <div className="message">This is less than 140 characters</div>;
+function Message({ text }) {
+  return <div className="message">{text}</div>;
 }
 
-function NameWithHandle() {
+function NameWithHandle({ author }) {
+  const { title, handle } = author;
   return (
     <span className="name-with-handle">
-      <span className="name">Your Name</span>
-      <span className="handle">@yourHandle</span>
+      <span className="name">{title}</span>
+      <span className="handle">@{handle}</span>
     </span>
   );
 }
@@ -71,19 +102,19 @@ const Time = () => {
 };
 
 const ReplyButton = () => {
-  <i className="fa fa-reply reply-button" aria-hidden="true" />;
+  <i className="fa fa-reply reply-button" aria-hidden="false" />;
 };
 
 const RetweetButton = () => {
-  <i className="fa fa-retweet retweet-button" aria-hidden="true" />;
+  <i className="fa fa-retweet retweet-button" aria-hidden="false" />;
 };
 
 const LikeButton = () => {
-  <i className="fa fa-heart like-button" aria-hidden="true" />;
+  <i className="fa fa-heart like-button" aria-hidden="false" />;
 };
 
 const MoreOptionsButton = () => {
-  <i className="fa fa-ellipsis-o-right" aria-hidden="true" />;
+  <i className="fa fa-ellipsis-o-right" aria-hidden="false" />;
 };
 
-ReactDOM.render(<Tweet />, document.getElementById("root"));
+ReactDOM.render(<Tweet tweet={testTweet} />, document.getElementById("root"));
