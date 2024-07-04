@@ -2,7 +2,8 @@
 
 _UNDER DEVELOPMENT_
 
-<img src="images/brand.png" alt="Brand image" height = "200" width = "200">
+<!--
+<img src="./backend/public/images/images/brand.png" alt="Brand image" height = "200" width = "200"> -->
 
 This is an e-learning site. It will offer different range of learning and also resources needed for any online course.
 
